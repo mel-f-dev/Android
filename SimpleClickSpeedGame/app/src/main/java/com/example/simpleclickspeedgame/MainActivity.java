@@ -2,7 +2,9 @@ package com.example.simpleclickspeedgame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -13,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout field;
     TextView score, time;
     Button play;
+
+    private CountDownTimer countDownTimer;
+    private long timemilliseconds = 10000;  // 10 seconds
 
     int count = 0;
 
@@ -55,7 +60,31 @@ public class MainActivity extends AppCompatActivity {
 
         play.setVisibility(View.GONE);
         field.setEnabled(true);
-
         count = 0;
+        startTime();
     }
+
+    private void startTime() {
+        countDownTimer = new CountDownTimer(timemilliseconds, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timemilliseconds = millisUntilFinished;
+                update();
+            }
+
+            @Override
+            public void onFinish() {
+                Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+                intent.putExtra("score", count);
+                startActivity(intent);
+                finish();
+
+            }
+        }.start();
+    }
+    private void update() {
+        int seconds = (int) timemilliseconds / 1000 ;
+        time.setText(""+seconds);
+    }
+
 }
