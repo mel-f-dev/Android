@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void update() {
         int seconds = (int) timemilliseconds / 1000 ;
-        time.setText(""+seconds);
+        time.setText(""+seconds+" sec");
     }
 
 }
