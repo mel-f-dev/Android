@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_search_light"/>
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/search_bar"
@@ -37,6 +37,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bar"
+        android:layout_below="@id/bar"
         android:id="@+id/recycler_view"/>
 </RelativeLayout>

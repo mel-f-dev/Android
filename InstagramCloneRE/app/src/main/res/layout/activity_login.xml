@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:padding="10dp"
     android:orientation="vertical"
@@ -13,7 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo_"/>
+        android:src="@drawable/logo2"/>
+
+
 
 
     <EditText
@@ -21,7 +23,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_background"
         android:hint="E-mail"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="80dp"
         android:inputType="textEmailAddress"
         android:id="@+id/email"
         android:padding="10dp"/>
