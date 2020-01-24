@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "763174914045",
+    "firebase_url": "https://voila-968c4.firebaseio.com",
+    "project_id": "voila-968c4",
+    "storage_bucket": "voila-968c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763174914045:android:eaf8e333d6d64a7c0d3b94",
+        "android_client_info": {
+          "package_name": "com.example.voila"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763174914045-aea6s822s0bh0r8et884tng2u608epot.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.voila",
+            "certificate_hash": "124668f3d079a6d615fcc559eff346f44442bd2b"
+          }
+        },
+        {
+          "client_id": "763174914045-qhvmu395bb7q9deivima809l55thjenp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1w7LXeKz4l-iChgWtLQj8Hjc98BFRJy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763174914045-qhvmu395bb7q9deivima809l55thjenp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
