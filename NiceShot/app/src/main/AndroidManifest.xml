@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.voila">
+    package="com.example.niceshot">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegistrationActivity"></activity>
-        <activity android:name=".LoginActivity"
-            android:theme="@style/LoginPage"
-            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".SplashScreen"
             android:noHistory="true"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,6 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+        <activity android:name=".RegistrationActivity" android:theme="@style/SignupTheme"></activity>
+        <activity android:name=".LoginActivity" android:theme="@style/SigninTheme"/>
     </application>
 
 </manifest>
