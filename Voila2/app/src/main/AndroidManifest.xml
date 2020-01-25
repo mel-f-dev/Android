@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".RegistrationActivity"></activity>
         <activity android:name=".LoginActivity"
-            android:theme="@style/LoginPage"/>
+            android:theme="@style/LoginPage"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".SplashScreen"
             android:noHistory="true"
