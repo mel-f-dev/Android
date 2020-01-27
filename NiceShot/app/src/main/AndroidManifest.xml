@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SettingLogOutActivity"></activity>
         <activity
             android:name=".SplashScreen"
             android:noHistory="true"
@@ -20,8 +21,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".RegistrationActivity" android:theme="@style/SignupTheme"></activity>
-        <activity android:name=".LoginActivity" android:theme="@style/SigninTheme"/>
+        <activity
+            android:name=".RegistrationActivity"
+            android:theme="@style/SignupTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/SigninTheme" />
     </application>
 
 </manifest>

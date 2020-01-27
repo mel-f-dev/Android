@@ -1,0 +1,11 @@
+{
+  "project_info": {
+    "project_number": "388708341338",
+    "firebase_url": "https://niceshot-33a49.firebaseio.com",
+    "project_id": "com.example.niceshot" //,"niceshot-33a49",
+    "storage_bucket": "niceshot-33a49.appspot.com",
+    "package_name": "com.example.niceshot"
+  },
+  "client": [],
+  "configuration_version": "1"
+}
